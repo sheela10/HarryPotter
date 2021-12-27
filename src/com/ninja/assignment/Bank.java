@@ -8,12 +8,9 @@ public class Bank {
 		
 		customer1.setcustName("Adidas");
 		customer1.setaccNumber("456ER383");
-		customer1.setdepositAmt(560);
-		customer1.setaccBalance(56000);
-		customer1.setwithdrawAmt(590);
 		
-		customer1.deposit();
-		customer1.withdraw();
+		customer1.deposit(56000);
+		customer1.withdraw(5000);
 		
 
 	}

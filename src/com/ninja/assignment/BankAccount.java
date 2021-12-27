@@ -5,8 +5,8 @@ public class BankAccount {
 	private String custName;
 	private String accNumber;
 	private double accBalance;
-	private double depositAmt;
-	private double withdrawAmt;
+	//private double depositAmt;
+	//private double withdrawAmt;
 	
 	public void setcustName(String Name) {
 		custName = Name;
@@ -20,28 +20,17 @@ public class BankAccount {
 		accBalance = accBal;
 	}
 	
-	public void setdepositAmt(double amtdpt) {
-		depositAmt = amtdpt;
-	}
-	
-	public void setwithdrawAmt(double amtwdw) {
-		withdrawAmt = amtwdw;
-	}
-	
-	
-	
-	public void deposit() {
+	public void deposit(double depositAmt) {
 		accBalance = accBalance + depositAmt;
 		System.out.println("Account Balance after deposit :" +accBalance);
 	}
 	
-	public void withdraw() {
+	public void withdraw(double withdrawAmt) {
 		if(accBalance >= withdrawAmt) {
 			accBalance = accBalance - withdrawAmt;
 		}else {
 			System.out.println("Insufficient Funds");
 		}
-		
 		System.out.println("Account Balance after withdrawal :" +accBalance);
 	}
 
